@@ -1,0 +1,43 @@
+.Alert {
+    @extend ._rounded-md;
+    position: relative;
+    padding: $inner-space-y / 2 $inner-space-x / 2;
+    border-width: 1px;
+
+    > * {
+        margin-bottom: $size-1;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    &._success {
+        background-color: $green-50;
+        border-color: $green-200;
+    }
+
+    &._error {
+        background-color: $red-50;
+        border-color: $red-200;
+    }
+
+    &._info {
+        background-color: $blue-50;
+        border-color: $blue-200;
+    }
+
+    &._warning {
+        background-color: $amber-50;
+        border-color: $amber-200;
+    }
+}

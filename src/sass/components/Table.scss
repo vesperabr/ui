@@ -1,0 +1,37 @@
+.Table {
+    width: 100%;
+    empty-cells: show;
+
+    th, td {
+        border-bottom-width: 1px;
+        padding: $size-3 $inner-space-x / 2;
+
+        &:first-child {
+            padding-left: $inner-space-x;
+        }
+
+        &:last-child {
+            padding-right: $inner-space-x;
+        }
+    }
+
+    th {
+        background-color: $cool-gray-50;
+        font-weight: $font-strong;
+        text-align: left;
+        vertical-align: bottom;
+    }
+
+    td {
+        vertical-align: top;
+        color: $gray-600;
+
+        &.actions {
+            text-align: right;
+        }
+    }
+
+    tbody tr:last-child td {
+        border-bottom-width: 0;
+    }
+}

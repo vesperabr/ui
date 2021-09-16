@@ -1,0 +1,117 @@
+.Doc-wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.Doc-sidebar {
+    flex: 0 0 auto;
+    width: calc((100% - 1170px) / 2 + 256px);
+    min-width: 256px;
+    height: 100%;
+    padding: 48px 24px;
+    padding-left: calc((100% - 1170px) / 2);
+    border-right: 1px solid #e6ecf1;
+    background-color: #f5f7f9;
+    font-size: 14px;
+    overflow-y: scroll;
+}
+
+.Doc-sidebar .logo {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    background: url('../images/logo-vespera.png') no-repeat;
+    background-size: contain;
+    color: #242a31;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 32px;
+}
+
+.Doc-sidebar ul li {
+    margin-bottom: 2px;
+}
+
+.Doc-sidebar ul li.is-directory {
+    margin-top: 24px;
+}
+
+.Doc-sidebar ul li.is-directory span {
+    padding: 0 8px;
+    color: #a1a1aa;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Doc-sidebar ul li a {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #3f3f46;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Doc-sidebar ul li a:hover {
+    background-color: #e6ecf1;
+}
+
+.Doc-sidebar ul li.is-current a {
+    background-color: #fff;
+    color: #2b50ed;
+}
+
+.Doc-page {
+    flex: 1 1 auto;
+    min-width: 900px;
+    padding: 48px 0 48px 90px;
+    padding-right: calc((100% - 1170px) / 2);
+    background-color: #fff;
+    font-size: 14px;
+    overflow-y: scroll;
+}
+
+.Doc-title {
+    margin-bottom: 48px;
+    padding: 0 0 32px 0;
+    border-bottom: 2px solid #e6ecf1;
+    color: #242a31;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.Demo,
+div[example] {
+    padding: 32px;
+    border: 1px solid #e6ecf1;
+    border-radius: 8px 8px 0 0;
+}
+
+.Demo > *:last-child,
+div[example] > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+.Demo + pre,
+div[example] + pre {
+    margin: 0 0 32px 0 !important;
+    padding: 32px !important;
+    border: 1px solid #e6ecf1;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    background-color: #f5f7f9 !important;
+    font-family: Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;
+    font-size: 14px;
+    line-height: 1.5 !important;
+}
+
+code[class*=language-] {
+    background-color: transparent !important;
+}

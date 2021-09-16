@@ -1,0 +1,41 @@
+.Row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & > .col {
+        flex: 1;
+    }
+
+    @for $i from 1 through 12 {
+        & > .col-#{$i} {
+            flex: 0 1 auto;
+            width: 100% / 12 * $i;
+        }
+
+        [class*='col-'] {
+            &._offset-#{$i} {
+                $width: 100% / 12 * $i;
+                margin-left: $width;
+            }
+        }
+    }
+
+    @include breakpoint($max: $sm) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    &._gutters-sm {
+        @include row-gutters($size-4);
+    }
+
+    &._gutters,
+    &._gutters-md {
+        @include row-gutters($size-8);
+    }
+
+    &._gutters-lg {
+        @include row-gutters($size-16);
+    }
+}

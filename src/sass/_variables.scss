@@ -1,0 +1,30 @@
+@import 'core/variables';
+
+// Breakpoints
+$sm: 768px !default;
+$md: 1024px !default;
+$lg: 1440px !default;
+
+// Spacing
+$inner-space-y: $size-4;
+$inner-space-x: $size-6;
+$outter-space-y: $size-4;
+
+// Colors
+$primary-color: $blue-600 !default;
+$primary-color-hover: $blue-700 !default;
+$secondary-color: $gray-700 !default;
+$secondary-color-hover: $gray-800 !default;
+$heading-color: $black !default;
+$text-color: $gray-800 !default;
+$muted-color: $gray-500 !default;
+$border-color: $cool-gray-200 !default;
+
+// Font families
+$font-sans: 'Source Sans Pro', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
+$font-serif: 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif' !default;
+$font-mono: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace' !default;
+
+// Font weights
+$font-strong: 600 !default;
+$font-stronger: 700 !default;

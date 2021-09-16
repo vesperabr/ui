@@ -1,0 +1,18 @@
+{% include 'header.twig' %}
+
+    <div class="Doc-wrapper">
+        <div class="Doc-sidebar">
+            <a class="logo _with-margin" href="{{ base_url }}">vex-ui</a>
+
+            <nav>
+                {{ nested_pages | navigation }}
+            </nav>
+        </div>
+
+        <div class="Doc-page">
+            <div class="Doc-title">{{ current_page.title }}</div>
+            {{ content }}
+        </div>
+    </div>
+
+{% include 'footer.twig' %}

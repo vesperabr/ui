@@ -1,0 +1,39 @@
+.Panel {
+    @extend ._rounded-lg;
+    @extend ._shadow-sm;
+    background-color: $white;
+    overflow: hidden;
+
+    > .panel-header {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        padding: $inner-space-y $inner-space-x;
+        border-bottom-width: 1px;
+    }
+
+    > .panel-body {
+        padding: $inner-space-y $inner-space-x;
+
+        > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    > .panel-footer {
+        display: flex;
+        align-items: center;
+        padding: $inner-space-y $inner-space-x;
+        border-top-width: 1px;
+    }
+
+    > .Tabs {
+        .tab {
+            padding: $inner-space-y $inner-space-x;
+
+            + .tab {
+                margin-left: 0;
+            }
+        }
+    }
+}

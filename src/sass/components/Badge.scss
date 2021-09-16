@@ -1,0 +1,58 @@
+.Badge {
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    min-width: 20px;
+    padding: 0 $size-2;
+    border-radius: $size-1;
+    background-color: $gray-200;
+    font-size: .75rem;
+    font-weight: $font-strong;
+    white-space: break-spaces;
+
+    &._pill {
+        padding: 0 $size-3;
+        border-radius: 9999px;
+    }
+
+    &._circle {
+        padding: 0;
+        border-radius: 9999px;
+        font-size: .625rem;
+        place-content: center;
+    }
+
+    &._red { background-color: $red-100; color: $red-600; }
+    &._yellow { background-color: $yellow-100; color: $yellow-600; }
+    &._green { background-color: $green-100; color: $green-600; }
+    &._blue { background-color: $blue-100; color: $blue-600; }
+    &._indigo { background-color: $indigo-100; color: $indigo-600; }
+    &._purple { background-color: $purple-100; color: $purple-600; }
+    &._pink { background-color: $pink-100; color: $pink-600; }
+
+    &._solid {
+        background-color: $gray-600;
+        color: $white;
+
+        &._red { background-color: $red-500; }
+        &._yellow { background-color: $yellow-500; }
+        &._green { background-color: $green-500; }
+        &._blue { background-color: $blue-500; }
+        &._indigo { background-color: $indigo-500; }
+        &._purple { background-color: $purple-500; }
+        &._pink { background-color: $pink-500; }
+    }
+
+    &._outline {
+        border: 1px solid $cool-gray-300;
+        background-color: transparent !important;
+
+        &._red { border: 1px solid $red-300; }
+        &._yellow { border: 1px solid $yellow-300; }
+        &._green { border: 1px solid $green-300; }
+        &._blue { border: 1px solid $blue-300; }
+        &._indigo { border: 1px solid $indigo-300; }
+        &._purple { border: 1px solid $purple-300; }
+        &._pink { border: 1px solid $pink-300; }
+    }
+}

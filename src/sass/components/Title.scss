@@ -1,0 +1,16 @@
+.Title {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: $font-strong;
+    line-height: 1.5;
+    white-space: break-spaces;
+
+    &._sm {
+        font-size: .875rem;
+    }
+
+    &._lg {
+        font-size: 1.5rem;
+    }
+}

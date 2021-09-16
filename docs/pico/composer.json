@@ -1,0 +1,16 @@
+{
+    "name": "vesperabr/ui",
+    "authors": [
+        {
+            "name": "Ricardo Monteiro",
+            "email": "ricardo@lab12.com.br"
+        }
+    ],
+    "require": {
+        "picocms/pico": "^2.1",
+        "picocms/pico-theme": "^2.1",
+        "picocms/pico-deprecated": "^2.1"
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}

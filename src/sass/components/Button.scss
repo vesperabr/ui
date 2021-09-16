@@ -1,0 +1,145 @@
+.Button {
+    @extend ._select-none;
+    @extend ._rounded;
+    @extend ._shadow-sm;
+    display: inline-flex;
+    height: $size-9;
+    padding: 0 $size-4;
+    align-items: center;
+    font-weight: $font-strong;
+    text-decoration: none;
+    cursor: pointer;
+    appearance: none;
+
+    background-color: $primary-color;
+    color: $white;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        @extend ._shadow-md;
+        background-color: $primary-color-hover;
+        color: $white;
+    }
+
+    &._sm {
+        @extend ._text-sm;
+        padding: 0 $size-3;
+        height: $size-7;
+    }
+
+    &._lg {
+        @extend ._rounded-md;
+        @extend ._text-lg;
+        padding: 0 $size-5;
+        height: $size-11;
+    }
+
+    &._loading {
+        padding: 0 $size-3;
+
+        &._sm {
+            padding: 0 $size-1;
+        }
+
+        &._lg {
+            padding: 0 $size-4;
+        }
+
+        &:empty::before {
+            margin-right: 0;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: $size-4;
+            height: $size-4;
+            margin-right: $size-2;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,.25);
+            border-bottom-color: #fff;
+            animation: loadingRotate 2s linear 0s infinite;
+        }
+    }
+
+    &._secondary {
+        background-color: $secondary-color;
+        color: $white;
+
+        &:hover {
+            background-color: $secondary-color-hover;
+            color: $white;
+        }
+    }
+
+    &._outline {
+        border: 1px solid $cool-gray-300;
+        background-color: transparent;
+        color: $text-color;
+
+        &:hover {
+            background-color: $cool-gray-50;
+        }
+    }
+
+    &._green {
+        background-color: $green-500;
+        color: $white;
+
+        &:hover {
+            background-color: $green-600;
+            color: $white;
+        }
+    }
+
+    &._red {
+        background-color: $red-500;
+        color: $white;
+
+        &:hover {
+            background-color: $red-600;
+            color: $white;
+        }
+    }
+
+    &._link {
+        padding: 0 $size-2;
+        background-color: transparent;
+        color: $secondary-color;
+        box-shadow: none !important;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &:disabled,
+    &._disabled {
+        background-color: $gray-400 !important;
+        box-shadow: none !important;
+        cursor: not-allowed;
+
+        &._outline {
+            background-color: transparent !important;
+            color: $muted-color;
+        }
+
+        &._link {
+            background-color: transparent !important;
+            color: $gray-400;
+            text-decoration: none;
+        }
+    }
+}
+
+@keyframes loadingRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

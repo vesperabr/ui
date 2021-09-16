@@ -1,0 +1,44 @@
+.Menu {
+    margin: 0;
+    list-style: none;
+
+    .menu-item {
+        margin-bottom: 2px;
+
+        a {
+            @extend ._rounded;
+            display: flex;
+            align-items: center;
+            height: $size-8;
+            padding: 0 $size-2;
+            color: $text-color;
+            font-weight: $font-strong;
+
+            > *:last-child {
+                margin-left: auto;
+            }
+
+            &:hover {
+                background-color: $gray-100;
+            }
+        }
+
+        &._active {
+            a {
+                background-color: $gray-100;
+                color: $primary-color;
+            }
+        }
+
+        .Overline {
+            margin-bottom: $size-1;
+            padding: 0 $size-2;
+        }
+    }
+
+    .menu-divider {
+        height: 1px;
+        margin: $size-2 0;
+        background-color: $border-color;
+    }
+}

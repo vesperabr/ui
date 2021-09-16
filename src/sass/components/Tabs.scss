@@ -1,0 +1,32 @@
+.Tabs {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    border-bottom-width: 1px;
+
+    .tab {
+        position: relative;
+        top: 1px;
+        display: inline-flex;
+        align-items: center;
+        padding: $inner-space-y / 2 $size-1;
+        border-bottom: 2px solid transparent;
+        color: $text-color;
+        text-decoration: none;
+        white-space: break-spaces;
+
+        + .tab {
+            margin-left: $inner-space-x / 2;
+        }
+
+        &:hover:not(._active) {
+            border-bottom-color: $gray-300;
+            color: $black;
+        }
+
+        &._active {
+            border-bottom-color: $primary-color;
+            font-weight: $font-strong;
+        }
+    }
+}

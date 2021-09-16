@@ -1,0 +1,12 @@
+site_title: vex-ui
+theme: vespera
+rewrite_url: true
+pages_order_by: meta
+pages_order_by_meta: order
+
+##
+# Prism
+#
+prism:
+  theme: base16-google-light
+  other-themes: base16-google-light
