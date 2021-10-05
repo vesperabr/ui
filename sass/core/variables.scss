@@ -1,7 +1,9 @@
 // Breakpoints
+$xs: 480px !default;
 $sm: 768px !default;
-$md: 1024px !default;
-$lg: 1440px !default;
+$md: 992px !default;
+$lg: 1200px !default;
+$xl: 1440px !default;
 
 // Main colors
 $color-primary: $blue-600 !default;
@@ -10,10 +12,10 @@ $color-secondary: $gray-700 !default;
 $color-secondary-hover: $gray-800 !default;
 
 // Other colors
-$color-border: $cool-gray-200 !default;
-$color-heading: $black !default;
-$color-text: $gray-800 !default;
-$color-text-muted: $gray-500 !default;
+$border-color: $cool-gray-200 !default;
+$heading-color: $black !default;
+$text-color: $gray-800 !default;
+$text-muted-color: $gray-500 !default;
 
 // Font families
 $font-sans: 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;

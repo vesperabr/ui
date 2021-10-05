@@ -58,44 +58,44 @@ title: Badge
 <span class="Badge _circle"></span>
 ```
 
-### Solid
+### Light
 <div example>
     <div class="_mb">
-        <span class="Badge _solid">Badge</span>
-        <span class="Badge _solid _red">Badge</span>
-        <span class="Badge _solid _yellow">Badge</span>
-        <span class="Badge _solid _green">Badge</span>
-        <span class="Badge _solid _blue">Badge</span>
-        <span class="Badge _solid _indigo">Badge</span>
-        <span class="Badge _solid _purple">Badge</span>
-        <span class="Badge _solid _pink">Badge</span>
+        <span class="Badge _light">Badge</span>
+        <span class="Badge _light _red">Badge</span>
+        <span class="Badge _light _yellow">Badge</span>
+        <span class="Badge _light _green">Badge</span>
+        <span class="Badge _light _blue">Badge</span>
+        <span class="Badge _light _indigo">Badge</span>
+        <span class="Badge _light _purple">Badge</span>
+        <span class="Badge _light _pink">Badge</span>
     </div>
     <div class="_mb">
-        <span class="Badge _pill _solid">Badge</span>
-        <span class="Badge _pill _solid _red">Badge</span>
-        <span class="Badge _pill _solid _yellow">Badge</span>
-        <span class="Badge _pill _solid _green">Badge</span>
-        <span class="Badge _pill _solid _blue">Badge</span>
-        <span class="Badge _pill _solid _indigo">Badge</span>
-        <span class="Badge _pill _solid _purple">Badge</span>
-        <span class="Badge _pill _solid _pink">Badge</span>
+        <span class="Badge _pill _light">Badge</span>
+        <span class="Badge _pill _light _red">Badge</span>
+        <span class="Badge _pill _light _yellow">Badge</span>
+        <span class="Badge _pill _light _green">Badge</span>
+        <span class="Badge _pill _light _blue">Badge</span>
+        <span class="Badge _pill _light _indigo">Badge</span>
+        <span class="Badge _pill _light _purple">Badge</span>
+        <span class="Badge _pill _light _pink">Badge</span>
     </div>
     <div>
-        <span class="Badge _circle _solid">8</span>
-        <span class="Badge _circle _solid _red">8</span>
-        <span class="Badge _circle _solid _yellow">8</span>
-        <span class="Badge _circle _solid _green">8</span>
-        <span class="Badge _circle _solid _blue">8</span>
-        <span class="Badge _circle _solid _indigo">8</span>
-        <span class="Badge _circle _solid _purple">8</span>
-        <span class="Badge _circle _solid _pink">8</span>
+        <span class="Badge _circle _light">8</span>
+        <span class="Badge _circle _light _red">8</span>
+        <span class="Badge _circle _light _yellow">8</span>
+        <span class="Badge _circle _light _green">8</span>
+        <span class="Badge _circle _light _blue">8</span>
+        <span class="Badge _circle _light _indigo">8</span>
+        <span class="Badge _circle _light _purple">8</span>
+        <span class="Badge _circle _light _pink">8</span>
     </div>
 </div>
 
 ```php
-<span class="Badge _solid"></span>
-<span class="Badge _solid _pill"></span>
-<span class="Badge _solid _circle"></span>
+<span class="Badge _light"></span>
+<span class="Badge _light _pill"></span>
+<span class="Badge _light _circle"></span>
 ```
 
 ### Outline

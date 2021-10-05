@@ -14,7 +14,7 @@ h3, ._h3,
 h4, ._h4,
 h5, ._h5,
 h6, ._h6 {
-    color: $color-heading;
+    color: $heading-color;
     font-weight: $font-strong;
     line-height: 1.5;
 }
@@ -31,7 +31,7 @@ h6, ._h6 { text-transform: uppercase; }
 // Typography
 // --------------------------------------------------------
 p {
-    color: $color-text;
+    color: $text-color;
     margin-bottom: $space-outter-y;
 }
 
@@ -60,7 +60,7 @@ p {
 }
 
 ._muted {
-    color: $color-muted;
+    color: $text-muted-color;
 }
 
 
@@ -128,7 +128,7 @@ select {
     @extend ._shadow-sm;
     border-width: 1px;
     background-color: $white;
-    color: $color-text;
+    color: $text-color;
     vertical-align: middle;
     transition: all .1s ease-out;
 
@@ -138,16 +138,16 @@ select {
     padding: 0 $size-2;
 
     &:focus {
-        color-border: $blue-300;
+        border-color: $blue-300;
         outline: none;
     }
 
     &._error {
-        color-border: $red;
+        border-color: $red;
     }
 
     &._success {
-        color-border: $green;
+        border-color: $green;
     }
 
     &:disabled,
@@ -207,7 +207,7 @@ input[type=checkbox] {
         width: $size-4;
         height: $size-4;
         border-width: 2px;
-        color-border: $gray-300;
+        border-color: $gray-300;
         background-color: $white;
         font-family: "fontello";
         font-size: 70%;
@@ -216,12 +216,12 @@ input[type=checkbox] {
     }
 
     &:hover::after {
-        color-border: $gray-400;
+        border-color: $gray-400;
     }
 
     &:checked::after {
         content: '\e808';
-        color-border: $color-primary;
+        border-color: $color-primary;
         background-color: $color-primary;
         color: $white;
     }

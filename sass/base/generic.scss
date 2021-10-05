@@ -1,7 +1,7 @@
 *, ::before, ::after {
     border-width: 0;
     border-style: solid;
-    border-color: $color-border;
+    border-color: $border-color;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: #f2f4f8;
-    color: $color-text;
+    color: $text-color;
 }
 
 article,
