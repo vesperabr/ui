@@ -3,14 +3,16 @@ title: Badge
 ---
 
 <div example>
-    <span class="Badge">Badge</span>
-    <span class="Badge _red">Badge</span>
-    <span class="Badge _yellow">Badge</span>
-    <span class="Badge _green">Badge</span>
-    <span class="Badge _blue">Badge</span>
-    <span class="Badge _indigo">Badge</span>
-    <span class="Badge _purple">Badge</span>
-    <span class="Badge _pink">Badge</span>
+    <div class="content">
+        <span class="Badge">Badge</span>
+        <span class="Badge _red">Badge</span>
+        <span class="Badge _yellow">Badge</span>
+        <span class="Badge _green">Badge</span>
+        <span class="Badge _blue">Badge</span>
+        <span class="Badge _indigo">Badge</span>
+        <span class="Badge _purple">Badge</span>
+        <span class="Badge _pink">Badge</span>
+    </div>
 </div>
 
 ```php

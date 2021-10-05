@@ -4,14 +4,14 @@
 
     th, td {
         border-bottom-width: 1px;
-        padding: $size-3 $inner-space-x / 2;
+        padding: $size-3 $space-inner-x / 2;
 
         &:first-child {
-            padding-left: $inner-space-x;
+            padding-left: $space-inner-x;
         }
 
         &:last-child {
-            padding-right: $inner-space-x;
+            padding-right: $space-inner-x;
         }
     }
 

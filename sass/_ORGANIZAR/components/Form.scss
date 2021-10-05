@@ -1,7 +1,7 @@
 .Form {
     .form-items {
         > * + * {
-            margin-top: $outter-space-y;
+            margin-top: $space-outter-y;
         }
     }
 
@@ -49,7 +49,7 @@
                     padding: 0 $size-3;
                     border-width: 1px;
                     background-color: $cool-gray-50;
-                    color: $text-color;
+                    color: $color-text;
                     white-space: nowrap;
             }
 
@@ -68,6 +68,6 @@
     }
 
     .form-buttons {
-        padding-top: $outter-space-y * 2.5;
+        padding-top: $space-outter-y * 2.5;
     }
 }

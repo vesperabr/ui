@@ -1,0 +1,90 @@
+*, ::before, ::after {
+    border-width: 0;
+    border-style: solid;
+    border-color: $color-border;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+body {
+    background-color: #f2f4f8;
+    color: $color-text;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: $font-sans;
+}
+
+pre,
+code,
+kbd,
+samp {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: $font-mono;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary-hover;
+    }
+
+    &[data-method="delete"],
+    &._danger {
+        color: $red !important;
+
+        &:hover {
+            color: $red-700;
+        }
+    }
+}
+
+hr {
+    border-top-width: 1px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+[hidden] {
+    display: none;
+}

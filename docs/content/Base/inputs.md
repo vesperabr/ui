@@ -2,6 +2,6 @@
 title: Inputs
 ---
 
-<div class="Demo">
+<div example>
     <input type="text" placeholder="Placehoder">
 </div>

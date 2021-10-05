@@ -8,12 +8,12 @@
         display: flex;
         align-items: center;
         place-content: space-between;
-        padding: $inner-space-y $inner-space-x;
+        padding: $space-inner-y $space-inner-x;
         border-bottom-width: 1px;
     }
 
     > .panel-body {
-        padding: $inner-space-y $inner-space-x;
+        padding: $space-inner-y $space-inner-x;
 
         > *:last-child {
             margin-bottom: 0;
@@ -23,13 +23,13 @@
     > .panel-footer {
         display: flex;
         align-items: center;
-        padding: $inner-space-y $inner-space-x;
+        padding: $space-inner-y $space-inner-x;
         border-top-width: 1px;
     }
 
     > .Tabs {
         .tab {
-            padding: $inner-space-y $inner-space-x;
+            padding: $space-inner-y $space-inner-x;
 
             + .tab {
                 margin-left: 0;

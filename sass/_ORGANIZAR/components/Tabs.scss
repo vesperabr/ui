@@ -9,14 +9,14 @@
         top: 1px;
         display: inline-flex;
         align-items: center;
-        padding: $inner-space-y / 2 $size-1;
+        padding: $space-inner-y / 2 $size-1;
         border-bottom: 2px solid transparent;
-        color: $text-color;
+        color: $color-text;
         text-decoration: none;
         white-space: break-spaces;
 
         + .tab {
-            margin-left: $inner-space-x / 2;
+            margin-left: $space-inner-x / 2;
         }
 
         &:hover:not(._active) {
@@ -25,7 +25,7 @@
         }
 
         &._active {
-            border-bottom-color: $primary-color;
+            border-bottom-color: $color-primary;
             font-weight: $font-strong;
         }
     }

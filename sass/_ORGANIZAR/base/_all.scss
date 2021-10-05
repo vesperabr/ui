@@ -1,27 +1,9 @@
-// Root
-// --------------------------------------------------------
-*, ::before, ::after {
-    border-color: $border-color;
-}
-
-html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-}
-
-body {
-    @extend ._font-sans;
-    background-color: #f2f4f8;
-    font-family: $font-sans;
-}
-
 ._mb {
-    margin-bottom: $outter-space-y;
+    margin-bottom: $space-outter-y;
 }
 
 ._mb-lg {
-    margin-bottom: $outter-space-y * 2.5;
+    margin-bottom: $space-outter-y * 2.5;
 }
 
 // Headings
@@ -32,7 +14,7 @@ h3, ._h3,
 h4, ._h4,
 h5, ._h5,
 h6, ._h6 {
-    color: $heading-color;
+    color: $color-heading;
     font-weight: $font-strong;
     line-height: 1.5;
 }
@@ -43,16 +25,14 @@ h3, ._h3 { font-size: $size-6; }
 h4, ._h4 { font-size: $size-5; }
 h5, ._h5 { font-size: $size-4; }
 h6, ._h6 { font-size: $size-3; }
-h6, ._h6 {
-    text-transform: uppercase;
-}
+h6, ._h6 { text-transform: uppercase; }
 
 
 // Typography
 // --------------------------------------------------------
 p {
-    color: $text-color;
-    margin-bottom: $outter-space-y;
+    color: $color-text;
+    margin-bottom: $space-outter-y;
 }
 
 ._font-sans {
@@ -80,17 +60,17 @@ p {
 }
 
 ._muted {
-    color: $muted-color;
+    color: $color-muted;
 }
 
 
 // Links
 // --------------------------------------------------------
 a {
-    color: $primary-color;
+    color: $color-primary;
 
     &:hover {
-        color: $primary-color-hover;
+        color: $color-primary-hover;
     }
 
     &[data-method="delete"],
@@ -114,7 +94,7 @@ ol { list-style: decimal; }
 ul,
 ol {
     margin-left: 20px;
-    margin-bottom: $outter-space-y;
+    margin-bottom: $space-outter-y;
 }
 
 nav ul,
@@ -148,7 +128,7 @@ select {
     @extend ._shadow-sm;
     border-width: 1px;
     background-color: $white;
-    color: $text-color;
+    color: $color-text;
     vertical-align: middle;
     transition: all .1s ease-out;
 
@@ -158,16 +138,16 @@ select {
     padding: 0 $size-2;
 
     &:focus {
-        border-color: $blue-300;
+        color-border: $blue-300;
         outline: none;
     }
 
     &._error {
-        border-color: $red;
+        color-border: $red;
     }
 
     &._success {
-        border-color: $green;
+        color-border: $green;
     }
 
     &:disabled,
@@ -227,7 +207,7 @@ input[type=checkbox] {
         width: $size-4;
         height: $size-4;
         border-width: 2px;
-        border-color: $gray-300;
+        color-border: $gray-300;
         background-color: $white;
         font-family: "fontello";
         font-size: 70%;
@@ -236,13 +216,13 @@ input[type=checkbox] {
     }
 
     &:hover::after {
-        border-color: $gray-400;
+        color-border: $gray-400;
     }
 
     &:checked::after {
         content: '\e808';
-        border-color: $primary-color;
-        background-color: $primary-color;
+        color-border: $color-primary;
+        background-color: $color-primary;
         color: $white;
     }
 }

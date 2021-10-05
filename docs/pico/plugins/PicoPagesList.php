@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Flat and nested pages list navigation for Pico CMS.
  *
@@ -51,15 +52,15 @@ class PicoPagesList extends AbstractPicoPlugin
      */
     public function onTwigRegistered(Twig_Environment &$twig)
     {
-        $twig->addFilter(new Twig_SimpleFilter('navigation', function($pages) {
+        $twig->addFilter(new Twig_SimpleFilter('navigation', function ($pages) {
             return $this->output($pages);
         }, array('is_safe' => array('html'))));
 
-        $twig->addFilter(new Twig_SimpleFilter('exclude', function($pages, array $paths = array()) {
+        $twig->addFilter(new Twig_SimpleFilter('exclude', function ($pages, array $paths = array()) {
             return $this->filterPages($pages, $paths);
         }, array('is_variadic' => true)));
 
-        $twig->addFilter(new Twig_SimpleFilter('only', function($pages, array $paths = array()) {
+        $twig->addFilter(new Twig_SimpleFilter('only', function ($pages, array $paths = array()) {
             return $this->filterPages($pages, $paths, true);
         }, array('is_variadic' => true)));
     }
@@ -103,7 +104,7 @@ class PicoPagesList extends AbstractPicoPlugin
      * @param  array  $page the page array
      * @return array  the nested path
      */
-    private function nested_path($page)
+    private function nested_path ($page)
     {
         $path = self::rtrim($page['id'], '/index');
         $parts = explode('/', $path);
@@ -111,15 +112,15 @@ class PicoPagesList extends AbstractPicoPlugin
 
         $arr = array();
         $parent = &$arr;
-        foreach($parts as $id => $part) {
+        foreach ($parts as $id => $part) {
             $value = [];
-            if(!$part || $id == $count-1) {
+            if (!$part || $id == $count - 1) {
                 $value = $page;
             } else {
-                $currpath = implode('/', array_slice($parts, 0, $id+1));
+                $currpath = implode('/', array_slice($parts, 0, $id + 1));
                 $value['id'] = $currpath;
             }
-            if($path && !$part) {
+            if ($path && !$part) {
                 $parent = $value;
                 break;
             }
@@ -157,7 +158,7 @@ class PicoPagesList extends AbstractPicoPlugin
         $isInclusive = false,
         $inclusiveOutput = []
     ) {
-        foreach($pages as $i => $page) {
+        foreach ($pages as $i => $page) {
             if (!isset($page['id'])) return;
 
             $path = self::rtrim($page['id'], '/index');

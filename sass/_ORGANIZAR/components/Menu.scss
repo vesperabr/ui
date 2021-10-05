@@ -11,7 +11,7 @@
             align-items: center;
             height: $size-8;
             padding: 0 $size-2;
-            color: $text-color;
+            color: $color-text;
             font-weight: $font-strong;
 
             > *:last-child {
@@ -26,7 +26,7 @@
         &._active {
             a {
                 background-color: $gray-100;
-                color: $primary-color;
+                color: $color-primary;
             }
         }
 
@@ -39,6 +39,6 @@
     .menu-divider {
         height: 1px;
         margin: $size-2 0;
-        background-color: $border-color;
+        background-color: $color-border;
     }
 }

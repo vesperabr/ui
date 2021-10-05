@@ -2,7 +2,16 @@
 title: Headings
 ---
 
-<div class="Demo">
+```php
+<h1>...</h1>
+<h2>...</h2>
+<h3>...</h3>
+<h4>...</h4>
+<h5>...</h5>
+<h6>...</h6>
+```
+
+<div example>
     <h1>Heading 1</h1>
     <p>On at tolerably depending do perceived. Luckily eat joy see own shyness minuter. So before remark at depart. Did son unreserved themselves indulgence its.</p>
     <h2>Heading 2</h2>

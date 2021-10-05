@@ -39,6 +39,8 @@
 }
 
 .Doc-sidebar ul li.is-directory span {
+    display: block;
+    margin-bottom: 4px;
     padding: 0 8px;
     color: #a1a1aa;
     font-size: 11px;
@@ -53,7 +55,7 @@
     height: 32px;
     padding: 0 8px;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: 6px;
     color: #3f3f46;
     font-weight: 600;
     text-decoration: none;
@@ -78,6 +80,48 @@
     overflow-y: scroll;
 }
 
+.Doc-page > h1,
+.Doc-page > h2,
+.Doc-page > h3,
+.Doc-page > h4,
+.Doc-page > h5,
+.Doc-page > h6 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.Doc-page > h1 { font-size: 28px; }
+.Doc-page > h2 { font-size: 24px; }
+.Doc-page > h3 { font-size: 20px; }
+.Doc-page > h4 { font-size: 16px; }
+.Doc-page > h5 { font-size: 14px; }
+.Doc-page > h6 { font-size: 12px; text-transform: uppercase; }
+
+.Doc-page > p,
+.Doc-page > ul,
+.Doc-page > ol {
+    margin-bottom: 16px;
+}
+
+.Doc-page > ul,
+.Doc-page > ul ul,
+.Doc-page > ul ul ul,
+.Doc-page > ol {
+    margin-left: 20px;
+}
+
+.Doc-page > ul { list-style: disc; }
+.Doc-page > ul ul { list-style: circle; }
+.Doc-page > ul ul ul { list-style: square; }
+.Doc-page > ol { list-style: decimal; }
+
+.Doc-page > p code {
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    color: #da1039;
+}
+
 .Doc-title {
     margin-bottom: 48px;
     padding: 0 0 32px 0;
@@ -87,21 +131,19 @@
     font-weight: 600;
 }
 
-.Demo,
 div[example] {
+    margin-bottom: 32px;
     padding: 32px;
     border: 1px solid #e6ecf1;
     border-radius: 8px 8px 0 0;
 }
 
-.Demo > *:last-child,
 div[example] > *:last-child {
     margin-bottom: 0 !important;
 }
 
-.Demo + pre,
 div[example] + pre {
-    margin: 0 0 32px 0 !important;
+    margin: -32px 0 32px 0 !important;
     padding: 32px !important;
     border: 1px solid #e6ecf1;
     border-top: none;
@@ -114,4 +156,8 @@ div[example] + pre {
 
 code[class*=language-] {
     background-color: transparent !important;
+}
+
+code[class*=language-], pre[class*=language-] {
+    font-size: 12px !important;
 }

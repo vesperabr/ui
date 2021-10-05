@@ -11,7 +11,7 @@
     cursor: pointer;
     appearance: none;
 
-    background-color: $primary-color;
+    background-color: $color-primary;
     color: $white;
 
     &:focus {
@@ -20,7 +20,7 @@
 
     &:hover {
         @extend ._shadow-md;
-        background-color: $primary-color-hover;
+        background-color: $color-primary-hover;
         color: $white;
     }
 
@@ -66,11 +66,11 @@
     }
 
     &._secondary {
-        background-color: $secondary-color;
+        background-color: $color-secondary;
         color: $white;
 
         &:hover {
-            background-color: $secondary-color-hover;
+            background-color: $color-secondary-hover;
             color: $white;
         }
     }
@@ -78,7 +78,7 @@
     &._outline {
         border: 1px solid $cool-gray-300;
         background-color: transparent;
-        color: $text-color;
+        color: $color-text;
 
         &:hover {
             background-color: $cool-gray-50;
@@ -108,7 +108,7 @@
     &._link {
         padding: 0 $size-2;
         background-color: transparent;
-        color: $secondary-color;
+        color: $color-secondary;
         box-shadow: none !important;
 
         &:hover {
@@ -124,7 +124,7 @@
 
         &._outline {
             background-color: transparent !important;
-            color: $muted-color;
+            color: $color-muted;
         }
 
         &._link {

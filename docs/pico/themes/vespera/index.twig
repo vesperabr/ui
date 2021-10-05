@@ -2,10 +2,12 @@
 
     <div class="Doc-wrapper">
         <div class="Doc-sidebar">
-            <a class="logo _with-margin" href="{{ base_url }}">vex-ui</a>
+            <a class="logo _with-margin" href="{{ base_url }}">Monalisa</a>
 
             <nav>
-                {{ nested_pages | navigation }}
+                {{ nested_pages | only('conceitos') | navigation }}
+                {{ nested_pages | only('base') | navigation }}
+                {{ nested_pages | only('componentes') | navigation }}
             </nav>
         </div>
 
