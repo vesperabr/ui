@@ -6,8 +6,8 @@ title: Button
     <button class="Button">Button</button>
     <button class="Button _secondary">Button</button>
     <button class="Button _outline">Button</button>
-    <button class="Button _green">Button</button>
-    <button class="Button _red">Button</button>
+    <button class="Button _success">Button</button>
+    <button class="Button _danger">Button</button>
     <button class="Button _link">Button</button>
 </div>
 
@@ -15,9 +15,26 @@ title: Button
 <button class="Button">Button</button>
 <button class="Button _secondary">Button</button>
 <button class="Button _outline">Button</button>
-<button class="Button _green">Button</button>
-<button class="Button _red">Button</button>
+<button class="Button _success">Button</button>
+<button class="Button _danger">Button</button>
 <button class="Button _link">Button</button>
+```
+
+### Rounded
+<div example>
+    <button class="Button _rounded">Button</button>
+    <button class="Button _secondary _rounded">Button</button>
+    <button class="Button _outline _rounded">Button</button>
+    <button class="Button _success _rounded">Button</button>
+    <button class="Button _danger _rounded">Button</button>
+</div>
+
+```php
+    <button class="Button _rounded">Button</button>
+    <button class="Button _secondary _rounded">Button</button>
+    <button class="Button _outline _rounded">Button</button>
+    <button class="Button _success _rounded">Button</button>
+    <button class="Button _danger _rounded">Button</button>
 ```
 
 ### Disabled
@@ -25,8 +42,8 @@ title: Button
     <button class="Button" disabled>Button</button>
     <button class="Button _secondary" disabled>Button</button>
     <button class="Button _outline" disabled>Button</button>
-    <button class="Button _green" disabled>Button</button>
-    <button class="Button _red" disabled>Button</button>
+    <button class="Button _success" disabled>Button</button>
+    <button class="Button _danger" disabled>Button</button>
     <button class="Button _link" disabled>Button</button>
 </div>
 
